@@ -1,0 +1,4 @@
+from sklearn.svm import SVC
+
+# Model Definition
+svm_model = SVC(kernel='linear', random_state=42)
