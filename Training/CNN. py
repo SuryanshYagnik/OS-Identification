@@ -1,0 +1,16 @@
+from sklearn.model_selection import train_test_split
+import pandas as pd
+
+# Load dataset (adjust shape accordingly)
+data = pd.read_csv('network_data.csv')
+X = data.drop('os_label', axis=1).values
+y = data['os_label'].values
+
+# Reshape for CNN input
+X = X.reshape(X.shape[0], 28, 28, 1)
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Training
+cnn_model.fit(X_train, y_train, epochs=5)
