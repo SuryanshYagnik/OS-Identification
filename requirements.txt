@@ -1,0 +1,13 @@
+# Machine Learning libraries
+scikit-learn==1.3.0  # Used for Random Forest, SVM, Logistic Regression
+
+# Deep Learning libraries
+tensorflow==2.13.0   # Used for CNN and RNN models
+
+# Data handling
+pandas==2.1.0        # Used for data manipulation
+numpy==1.24.0        # Used for numerical computations
+
+# Optional but recommended
+matplotlib==3.7.1    # For plotting, if needed
+seaborn==0.12.2      # For visualizing results, if needed
